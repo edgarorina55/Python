@@ -1,0 +1,25 @@
+File Handling 
+
+.performing operations on a file through a programming interface 
+    > creating, opening, reading, writing, deleting
+.involves managing data flow between the program and the file system on the storage device ensuring data is handled 
+safely and efficiently 
+
+Need for FH:
+.storing data permanently, even after program ends 
+.to access external files like .csv, .json, .txt
+.processing large files efficiently without using much memory 
+.automating tasks like reading configs or saving outputs 
+
+..opening a file    
+    file = open('file_name', 'mode')
+        .file_name/path & mode are arguments 
+...closing file
+        .file.close()
+
+.with an open file:
+    .check for file properties 
+        print("Filename:", f.name)
+        print("Mode", f.mode)
+        print("Is Closed?", f.closed) 
+
