@@ -23,3 +23,17 @@ Need for FH:
         print("Mode", f.mode)
         print("Is Closed?", f.closed) 
 
+
+Handling exceptions when closing a file
+    try:
+        file = open("learning", "r")
+        content = file.read()
+        print(content)
+    finally:
+        file.close()
+
+>> try - starts the block to handle code that might raise an error
+   open() - opens the file in read mode 
+   read() - reads the content of the file 
+   finally - ensures the code inside it runs no matter what 
+
