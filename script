@@ -1,7 +1,3 @@
-from operator import add
-from pyexpat import features
-from xxlimited import new
-
 
 Scripting
 
