@@ -37,3 +37,23 @@ Handling exceptions when closing a file
    read() - reads the content of the file 
    finally - ensures the code inside it runs no matter what 
 
+
+OS Module 
+.provides functions for interacting with the operating system 
+.provides a portable way of using operating system-dependent functionality 
+
+
+OS-Module Functions 
+.Currently Working Directory - folder where Python is currently operating 
+    .Python searches for files here when they are opened without specifying a full path 
+    .this directory may be different from the location where the Python script is stored 
+
+>getting the CWD  
+    .to get the location of the CWD, the os.getcwd() function from the os module is used 
+            import os 
+            cwd = os.getcwd() 
+            print("Current working directory:", cwd)
+
+    .changing current working directory 
+        .using os.chdir(path) - which switches Python's context to the specified directory 
+        
